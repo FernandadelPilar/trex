@@ -127,11 +127,12 @@ function draw() {
    else if (gameState === END) {
       gameOver.visible = true;
       restart.visible = true;
+      trex.changeAnimation("collided", trex_collided);
      if(mousePressedOver(restart)) {
       reset();
     }
      //change the trex animation
-      trex.changeAnimation("collided", trex_collided);
+      
     
      
      
